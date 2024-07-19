@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+
+.landing, .second_page {
+    background-image: url('main backround.png');
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* or use 'contain' if you prefer */
+    height: 100vh; /* Ensure the container has a height */
+}
+
+.imageguru {
+    width: 100%;
+    max-width: 1000px; /* Maximum width for larger screens */
+    height: auto;
+}
+
+.second {
+    margin-top: 0;
+    color: #1679AB;
+    font-size: 2.5rem; /* Relative font size */
+    text-align: center; /* Center text within this class */
+}
+
+.Tribute {
+    font-size: 2rem; /* Relative font size */
+    text-align: center; /* Center text within this class */
+}
+
+@media (max-width: 600px) {
+    .second {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+    .Tribute {
+        font-size: 1.2rem; /* Adjust font size for small screens */
+    }
+}
+
+.desc {
+    margin-top: 0%;
+    font-size: 30px;
+    color: #1679AB;
+    text-align: left; /* Align description to the left */
+}
+
+.third_page {
+    background-image: url('main backround.png');
+}
+
+.links {
+    text-align: center; /* Center the links */
+}
+
+.links a {
+    text-decoration: none;
+    color: white; /* Change text color to white */
+    display: inline-block; /* Make each link an inline-block element */
+    border: 2px solid #1679AB; /* Border color matching the theme */
+    width: 150px; /* Increase width to accommodate longer text */
+    border-radius: 12px;
+    height: 60px;
+    background-color: #F7418F; /* Button background color */
+    margin-bottom: 10px;
+    line-height: 60px; /* Center text vertically */
+    word-wrap: break-word; /* Prevent text overflow */
+    overflow: hidden; /* Hide overflow text */
+    white-space: normal; /* Allow text to wrap */
+}
