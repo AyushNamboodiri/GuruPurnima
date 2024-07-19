@@ -3,40 +3,41 @@ body {
     padding: 0;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
+    background-image: url(2back.jpg);
 }
 
 .landing, .second_page {
     background-image: url('main backround.png');
     text-align: center;
     background-repeat: no-repeat;
-    background-size: cover; /* or use 'contain' if you prefer */
-    height: 100vh; /* Ensure the container has a height */
+    background-size: cover;
+    height: 100vh;
 }
 
 .imageguru {
     width: 100%;
-    max-width: 1000px; /* Maximum width for larger screens */
+    max-width: 1000px;
     height: auto;
 }
 
 .second {
     margin-top: 0;
     color: #1679AB;
-    font-size: 2.5rem; /* Relative font size */
-    text-align: center; /* Center text within this class */
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .Tribute {
-    font-size: 2rem; /* Relative font size */
-    text-align: center; /* Center text within this class */
+    font-size: 2rem;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
     .second {
-        font-size: 1.5rem; /* Adjust font size for small screens */
+        font-size: 1.5rem;
     }
     .Tribute {
-        font-size: 1.2rem; /* Adjust font size for small screens */
+        font-size: 1.2rem;
     }
 }
 
@@ -44,7 +45,7 @@ body {
     margin-top: 0%;
     font-size: 30px;
     color: #1679AB;
-    text-align: left; /* Align description to the left */
+    text-align: left;
 }
 
 .third_page {
@@ -52,21 +53,43 @@ body {
 }
 
 .links {
-    text-align: center; /* Center the links */
+    text-align: center;
 }
 
 .links a {
     text-decoration: none;
-    color: white; /* Change text color to white */
-    display: inline-block; /* Make each link an inline-block element */
-    border: 2px solid #1679AB; /* Border color matching the theme */
-    width: 150px; /* Increase width to accommodate longer text */
+    color: white;
+    display: inline-block;
+    border: 2px solid #1679AB;
+    width: 150px;
     border-radius: 12px;
     height: 60px;
-    background-color: #F7418F; /* Button background color */
+    background-color: #F7418F;
     margin-bottom: 10px;
-    line-height: 60px; /* Center text vertically */
-    word-wrap: break-word; /* Prevent text overflow */
-    overflow: hidden; /* Hide overflow text */
-    white-space: normal; /* Allow text to wrap */
+    line-height: 60px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+}
+.ending {
+    background-image: url(main\ backround.png);
+}
+.albums {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 20px; /* Add padding to avoid overlap */
+    margin-left: 120px; /* Add margin to separate from other sections */
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid;
+
+}
+.footer {
+    background-color:#E178C5;
+    height: 120px;
 }
