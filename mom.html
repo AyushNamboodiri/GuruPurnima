@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mummy page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Next Page</title>
+    <style>
+        .balloon {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background-color: #F7418F;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+            color: black;
+            font-size: 1.5rem;
+            font-weight: bold;
+            animation: popUp 1s ease-in-out forwards;
+        }
+
+        @keyframes popUp {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        .message {
+            display: none;
+            text-align: center;
+            font-size: 2rem;
+            color: #1679AB;
+        }
+    </style>
 </head>
 <body>
-    hi
-    
-    
+    <div class="balloon" id="balloon">Happy Guru Purnima</div>
+    <div class="message" id="message">Welcome To Your Page</div>
+
+    <script>
+        window.onload = function() {
+            const balloon = document.getElementById('balloon');
+            const message = document.getElementById('message');
+
+            // Show the balloon
+            balloon.style.display = 'block';
+
+            // Hide the balloon after 3 seconds and show the message
+            setTimeout(function() {
+                balloon.style.display = 'none';
+                message.style.display = 'block';
+            }, 3000); // 3000 milliseconds = 3 seconds
+        };
+    </script>
 </body>
 </html>
